@@ -12,7 +12,7 @@ version = 1.0
 icon.filename = Buttons/app_icon.png
 
 # pyjnius is de juiste recipe-naam voor Buildozer/p4a.
-requirements = python3,kivy==2.3.0,pygame==2.5.2,plyer,android,pyjnius,mutagen
+requirements = python3,kivy==2.3.0,pygame==2.5.2,plyer,android,pyjnius,mutagen,cython==0.29.34
 
 # Maakt een foreground service met classnaam ServiceMadsmusic.
 services = madsmusic:service.py:foreground:sticky
@@ -26,9 +26,6 @@ android.api = 34
 android.minapi = 21
 android.ndk = 25b
 android.archs = arm64-v8a
-
-android.enable_androidx = True
-android.gradle_dependencies = androidx.core:core:1.9.0
 
 log_level = 2
 warn_on_root = 1
