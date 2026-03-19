@@ -26,6 +26,9 @@ android.api = 34
 android.minapi = 21
 android.ndk = 25b
 android.archs = arm64-v8a
+android.enable_androidx = True
+android.gradle_dependencies = androidx.core:core:1.9.0
+android.release_artifact = apk
 
 log_level = 2
 warn_on_root = 1
