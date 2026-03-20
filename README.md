@@ -1,4 +1,5 @@
-🎵 MadsMusic
+MadsMusic
+
 MadsMusic is een moderne, minimalistische muziekspeler voor Android. Gebouwd met Python en Kivy, biedt het een lichtgewicht alternatief voor zware streamingdiensten, met de focus op lokale muziekopslag en een strakke gebruikerservaring.
 
 ✨ Kenmerken
