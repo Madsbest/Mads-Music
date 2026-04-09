@@ -8,7 +8,7 @@ source.include_exts = py,png,jpg,jpeg,kv,atlas,mp3,wav,ogg,m4a,json
 source.include_patterns = Buttons/*,music/*
 source.exclude_dirs = __pycache__,bin,.git,.venv,venv
 
-version = 1.1
+version = 1.2
 icon.filename = Buttons/app_icon.png
 
 # pyjnius is de juiste recipe-naam voor Buildozer/p4a.
@@ -20,6 +20,13 @@ orientation = portrait
 fullscreen = 0
 
 android.permissions = INTERNET,READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE,READ_MEDIA_AUDIO,WAKE_LOCK
+android.allow_backup = True
+
+# Android-updates moeten met dezelfde signing key gebouwd worden.
+# Houd package.name/package.domain stabiel en gebruik voor elke update steeds dezelfde keystore.
+# android.release_artifact = apk
+# android.release_keystore = ./madsmusic-release.keystore
+# android.release_keyalias = madsmusic
 
 # API 33 avoids Android 14 foreground-service-type enforcement that
 # current python-for-android service packaging does not reliably expose.
@@ -30,7 +37,6 @@ android.archs = arm64-v8a
 
 android.enable_androidx = True
 android.gradle_dependencies = androidx.core:core:1.9.0
-android.release_artifact = apk
 
 log_level = 2
 warn_on_root = 1
